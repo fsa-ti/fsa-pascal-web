@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-app: #121316;
+    --bg-header: #1a1b20;
+    --bg-sidebar: #16171b;
+    --bg-editor: #121316;
+    --bg-panel: #1a1b20;
+    --bg-card: #22232a;
+    --bg-card-hover: #292a33;
+    
+    --border-subtle: rgba(255, 255, 255, 0.07);
+    --border-medium: rgba(255, 255, 255, 0.12);
+    --border-active: #3b82f6;
+
+    --text-primary: #f4f4f5;
+    --text-secondary: #a1a1aa;
+    --text-muted: #71717a;
+
+    --accent-delphi: #e11d48;
+    --accent-delphi-hover: #be123c;
+    --accent-blue: #3b82f6;
+    --accent-emerald: #10b981;
+    --accent-amber: #f59e0b;
+    --accent-purple: #a855f7;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+  }
+}
+
+/* Scrollbars Minimalistas Apple/macOS */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* Grid da Prancheta do Form Designer */
+.designer-grid {
+  background-color: #0d0e12;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Indicador de Seleção VCL */
+.vcl-selected {
+  outline: 2px solid #3b82f6 !important;
+  outline-offset: 1px;
+}
+
+/* Isolamento e estabilização de métricas do Monaco Editor */
+.monaco-editor,
+.monaco-editor * {
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+}
+
+.monaco-editor .view-line {
+  letter-spacing: 0px !important;
+  word-spacing: 0px !important;
+}
+

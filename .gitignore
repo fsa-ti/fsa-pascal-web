@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+
+# Delphi/Pascal binary outputs and intermediate files
+*.dcu
+*.exe
+*.dll
+*.bpl
+*.dcp
+*.res
+*.identcache
+*.stat
+*.dproj.local
+*.~*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & local files
+.env
+.env.local
+.env.*.local
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
